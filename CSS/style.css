@@ -1,0 +1,1535 @@
+
+
+
+
+/*Tipografia Montserrat*/
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/*Tipografia Roboto*/
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+/*-------------------------- RESETEO DE HTML */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    list-style:none ;
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* /////////ESTILOS PARA GENERAR MENU DESPLEGABLE////////////// */
+
+/* PROBLEMA CON LA DISPOSICION DEL SUBMENU, SIN ESE PADDING TOP QUEDA MAL POSICIONADO */
+.subMenuColecciones{
+    position: absolute;
+    display: none;
+    top: 100%;
+}
+
+.subMenuColecciones li{
+    display: block;
+}
+
+
+ul li:hover ul{
+    display: block;
+}
+
+/* ////////////FIN DE ESTILO MENU DESPLEGABLE//////// */
+
+
+/* //////////////////////////// FIN RESET /////////////// */
+
+
+
+/*------------------- ESTILOS PARA BODY */
+#bodyIndex, #bodyColecciones, #bodyNosotros, #bodyContacto, #bodyCarrito, #bodyIlustraciones, #bodyAbstractos, #bodyArtistas, #bodyBotanica{
+    background-color: rgb(250, 250, 250);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing:auto;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+
+
+
+
+/* -----------------------------------------------------ESTILOS GENERALES PARA HEADER y FOOTER */
+
+/* Estilos de Header */
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    position:fixed;
+    background-color: rgb(0, 0, 0);
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    z-index: 1;
+}
+
+
+.logoNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+}
+
+#navBarLeft{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1400px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+#navBarLeft li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+#navBarLeft a{
+    margin-top: 10px;
+    align-content: center;
+    font-size: 18px;
+    width: auto;
+    height: 90px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+#navBarRight{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    width: 1400px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbarBuscador{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbarBuscador input{
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#navBarRight li i{
+    color: rgb(255, 255, 255);
+}
+
+#navBarRight li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    background-color: rgb(0, 0, 0);
+}
+
+#navBarRight a{
+    margin-top: 10px;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* ---------------------estilos en footer */
+
+
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
+}
+
+.footerNewsletter{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 5px;
+    font-size: 15px;
+
+}
+.footerNewsletter input{
+    border-radius: 10px 0px 0 10px;
+    padding: 2px 2px 2px 10px;
+    background-color: #d8d8d8;
+    height: 30px;
+    border: #d8d8d8;
+    
+}
+
+.footerNewsletter button{
+    border-radius: 0px 10px 10px 0px;
+    padding: 2px 10px 2px 10px;
+    background-color:#085C5A;
+    color: aliceblue;
+    border: #085C5A;
+    height: 30px;
+}
+
+.footerLogo{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerCopy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color:aliceblue;
+
+}
+
+.footerRedes{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+}
+.footerRedesSociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footerPagos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+@media (max-width: 765px) {
+
+    .footerNewsletter input{
+        border-radius: 10px 0px 0 10px;
+        padding: 2px 2px 2px 10px;
+        background-color: #d8d8d8;
+        height: 30px;
+        border: #d8d8d8;
+        
+    }
+    
+    .footerNewsletter button{
+        border-radius: 0px 10px 10px 0px;
+        padding: 2px 10px 2px 10px;
+        background-color:#085C5A;
+        color: aliceblue;
+        border: #085C5A;
+        height: 30px;
+
+    }
+
+    #footer{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .footerLogo{
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px ;
+        z-index: 1;
+
+    }
+
+    .footerRedes{
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+    }
+    
+}
+/*------------------ESTILOS PARA INDEX */
+
+
+
+
+#mainIndex{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.bannerIndex{
+    border-radius: 0px 0px 10px 10px;
+}
+.mainBoxIndex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/*--------------------------- ESTILOS PARA COLECCIONES */
+
+#mainColecciones{
+    display:flex ;
+    
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    /* border: 1px red solid; */
+}
+
+/* CARACTERISTICAS GENERALES PARA FILA 1 */
+.mainColecciones1  {
+    flex-wrap: wrap;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.mainColecciones1 article{
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainColecciones1 img{
+    border-radius: 40px 40px 0px 0px ;
+
+}
+
+.mainColecciones1 h4{
+    align-content: center;
+    height: 30px;
+    justify-self: center;
+    color: #085C5A;
+
+}
+
+/* -------------------------FIN DE FILA 1 */
+
+/* CARACTERISTICAS GENERALES PARA FILA 2 */
+.mainColecciones2{
+    flex-wrap: wrap;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+}
+
+.mainColecciones2 article{
+
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainColecciones2 img{
+    border-radius: 40px 40px 0px 0px ;
+}
+.mainColecciones2 h4{
+    align-content: center;
+    height: 30px;
+    justify-self: center;
+    color: #085C5A;
+}
+
+
+/* --------------------FIN DE ESTILOS PARA COLECCIONES */
+
+/* ESTILOS PARA SUBMENU------ ILUSTRACIONES */
+
+#mainIlustraciones{
+    
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    height: 150vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 100px;
+    }
+
+.mainIlustraciones1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+    /* CARD NUMERO1 */
+.mainCardIlustraciones1{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion1.jpg);
+}
+
+/* CARD NUMERO2 */
+.mainCardIlustraciones2{
+    width: 100%;
+    height: 100%;
+    }
+.mainIlustracionesImg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion2.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO3 */
+.mainCardIlustraciones3{
+    width: 100%;
+    height: 100%;
+    }
+.mainIlustracionesImg3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion3.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO4 */
+.mainCardIlustraciones4{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion4.jpg);
+    background-position: center;
+}
+
+
+
+.mainIlustraciones2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px ;
+}
+
+/* CARD NUMERO5 */
+.mainCardIlustraciones5{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion5.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO6 */
+.mainCardIlustraciones6{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion6.jpg);
+}
+
+/* CARD NUMEOR7 */
+.mainCardIlustraciones7{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion7.jpg);
+}
+
+/* CARD NUMERO8 */
+.mainCardIlustraciones8{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg8{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion8.jpg);
+}
+
+
+.mainIlustraciones3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px ;
+}
+
+/* CARD NUMERO9 */
+.mainCardIlustraciones9{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg9{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion12.jpg);
+}
+
+/* CARD NUMERO10 */
+.mainCardIlustraciones10{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg10{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion10.jpg);
+}
+
+/* CARD NUMERO11 */
+.mainCardIlustraciones11{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg11{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion9.jpg);
+}
+
+/* CARD NUMERO12 */
+.mainCardIlustraciones12{
+    width: 100%;
+    height: 100%;
+}
+.mainIlustracionesImg12{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/ilustracion11.jpg);
+}
+
+
+
+
+/* FIN DE ESTILOS ILUSTRACIONES */
+
+/* ESTILOS PARA SUBMENU------ BOTÁNICA */
+
+#mainBotanica{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    height: 150vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 100px;
+
+    /* border: 1px red solid;*/
+    }
+
+.mainBotanica1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+    /* CARD NUMERO1 */
+.mainCardBotanica1{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica1.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO2 */
+.mainCardBotanica2{
+    width: 100%;
+    height: 100%;
+    }
+.mainBotanicaImg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica2.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO3 */
+.mainCardBotanica3{
+    width: 100%;
+    height: 100%;
+    }
+.mainBotanicaImg3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica3.jpg);
+    background-position: center;;
+}
+
+/* CARD NUMERO4 */
+.mainCardBotanica4{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica4.jpg);
+    background-position: center;
+}
+
+
+
+.mainBotanica2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px ;
+}
+
+/* CARD NUMERO5 */
+.mainCardBotanica5{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica5.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO6 */
+.mainCardBotanica6{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica6.jpg);
+    background-position: center;
+}
+
+/* CARD NUMEOR7 */
+.mainCardBotanica7{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica7.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO8 */
+.mainCardBotanica8{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg8{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica8.jpg);
+    background-position: center;
+}
+
+
+.mainBotanica3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px ;
+}
+
+/* CARD NUMERO9 */
+.mainCardBotanica9{
+    width: 100%;
+    height: 100%;
+    
+}
+.mainBotanicaImg9{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica9.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO10 */
+.mainCardBotanica10{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg10{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica10.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO11 */
+.mainCardBotanica11{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg11{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/botanica11.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO12 */
+.mainCardBotanica12{
+    width: 100%;
+    height: 100%;
+}
+.mainBotanicaImg12{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/coleccion2.jpg);
+    background-position: center;
+}
+
+/* FIN DE ESTILOS PARA BOTANICA */
+
+/* ESTILOS PARA SUBMENU------ ARTISTAS */
+
+#mainArtistas{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    height: 150vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 100px;
+
+    /* border: 1px red solid;*/
+    }
+
+.mainArtistas1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+    /* CARD NUMERO1 */
+.mainCardArtistas1{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas1.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO2 */
+.mainCardArtistas2{
+    width: 100%;
+    height: 100%;
+    }
+.mainArtistasImg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas2.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO3 */
+.mainCardArtistas3{
+    width: 100%;
+    height: 100%;
+    }
+.mainArtistasImg3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas3.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO4 */
+.mainCardArtistas4{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas4.jpg);
+    background-position: center;
+}
+
+
+
+.mainArtistas2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px ;
+}
+
+/* CARD NUMERO5 */
+.mainCardArtistas5{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas5.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO6 */
+.mainCardArtistas6{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas6.jpg);
+    background-position: center;
+}
+
+/* CARD NUMEOR7 */
+.mainCardArtistas7{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas7.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO8 */
+.mainCardArtistas8{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg8{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas8.jpg);
+    background-position: center;
+}
+
+
+.mainArtistas3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px ;
+}
+
+/* CARD NUMERO9 */
+.mainCardArtistas9{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg9{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas9.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO10 */
+.mainCardArtistas10{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg10{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas10.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO11 */
+.mainCardArtistas11{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg11{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas11.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO12 */
+.mainCardArtistas12{
+    width: 100%;
+    height: 100%;
+}
+.mainArtistasImg12{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artistas12.jpg);
+    background-position: center;
+}
+/* FIN DE ESTILOS PARA ARTISTAS */
+
+/* ESTILOS PARA SUBMENU------ ARTISTAS */
+
+#mainAbstractos{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    height: 150vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 100px;
+    }
+
+.mainAbstractos1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+    /* CARD NUMERO1 */
+.mainCardAbstractos1{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos1.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO2 */
+.mainCardAbstractos2{
+    width: 100%;
+    height: 100%;
+    }
+.mainAbstractosImg2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos2.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO3 */
+.mainCardAbstractos3{
+    width: 100%;
+    height: 100%;
+    }
+.mainAbstractosImg3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos3.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO4 */
+.mainCardAbstractos4{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos4.jpg);
+    background-position: center;
+}
+
+
+
+.mainAbstractos2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px ;
+}
+
+/* CARD NUMERO5 */
+.mainCardAbstractos5{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg5{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos5.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO6 */
+.mainCardAbstractos6{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos6.jpg);
+    background-position: center;
+}
+
+/* CARD NUMEOR7 */
+.mainCardAbstractos7{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos7.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO8 */
+.mainCardAbstractos8{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg8{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos8.jpg);
+    background-position: center;
+}
+
+
+.mainAbstractos3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px ;
+}
+
+/* CARD NUMERO9 */
+.mainCardAbstractos9{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg9{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos9.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO10 */
+.mainCardAbstractos10{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg10{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos10.jpg);
+    background-position: center;
+
+}
+
+/* CARD NUMERO11 */
+.mainCardAbstractos11{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg11{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos11.jpg);
+    background-position: center;
+}
+
+/* CARD NUMERO12 */
+.mainCardAbstractos12{
+    width: 100%;
+    height: 100%;
+}
+.mainAbstractosImg12{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/abstractos12.jpg);
+    background-position: center;
+}
+
+
+
+/* ---------------------------ESTILOS PARA SOBRE NOSOTROS */
+
+#mainAboutus{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 100px 0.8fr 1fr 1fr 0.4fr;
+    row-gap: 10px;
+    column-gap: 10px; 
+    grid-template-areas: 
+        "titulo titulo"
+        "foto texto"
+        "foto foto2"
+        "texto2 foto2"
+        "fotos fotos";
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px; 
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+}
+
+.mainAboutusTitulo{
+    grid-area: titulo;
+    align-self: center;
+    justify-self: center;
+    color: #085C5A;
+    font-size: 25px;
+}
+
+.mainAboutusFoto1{
+    grid-area: foto;
+    background-image: url(../images/aboutus1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 20px;
+    background-position: center;
+}
+.mainAboutusTexto1{
+    grid-area: texto;
+    padding: 50px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.mainAboutusFoto2{
+    grid-area: foto2;
+    background-image: url(../images/aboutus2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 20px;
+    background-position: center;
+
+}
+.mainAboutusTexto2{
+    grid-area:texto2 ;
+    padding: 50px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300 ;
+}
+
+.mainAboutusCarrusel{
+    grid-area: fotos;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-self: center;
+    align-items: center;
+}
+
+.mainAboutusCarrusel img{
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 765px) {
+    
+    #mainAboutus{
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px; 
+        grid-template-areas: 
+            "titulo"
+            "foto"
+            "texto"
+            "foto2"
+            "texto2"
+            "fotos ";
+        background-color: aliceblue;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 100px; 
+        min-height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100 ;
+    }
+    
+}
+/* ------------------FIN DE ESTILOS PARA ABOUTUS */
+
+/*--------------------------- ESTILOS PARA CONTACTO */
+
+#mainContacto {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 20px; 
+    grid-template-areas: 
+        "titulo   titulo"
+        "contacto formulario";
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 150px; 
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mainContactoTitulo{
+    grid-area: titulo;
+    align-self: center;
+    justify-self: center;
+    color: #085C5A;
+    font-size: 25px;
+}
+
+.contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column
+}
+
+.contactoComunicacion{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.contactoMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoMapa iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.mainFormulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.formulario1{
+    display: flex;
+    column-gap: 20px;
+}
+
+.contactoInput{
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid #085C5A;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contactoTextarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 10px 12px 10px;
+    color: black;
+    background-color: #d8f0ef;
+    box-sizing: border-box;
+    border: 2px solid #085C5A;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contactoTextarea:focus{
+    border: 3px solid #085C5A;
+}
+
+.contactoBoton{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 10px 12px 10px;
+    box-sizing: border-box;
+    border: 2px solid #05302f;
+    background-color: #085C5A;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.contactoTelefono{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoUbicacion{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoEmail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoRedes{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.iconosRedes{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-content: space-evenly;
+    align-self: center;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 765px) {
+
+    #mainContacto {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 100px 1fr auto  1fr;
+        row-gap: 20px;
+        column-gap: 20px; 
+        grid-template-areas: 
+            "titulo"
+            "contacto "
+            "mapa"
+            "formulario";
+        background-color: aliceblue;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 150px; 
+        min-height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+
+
+
+/* -------------------------------FIN DE ESTILOS PARA CONTACTOS */
+
+
+
+/* -----------------------------ESTILOS PARA CARRITO */
+
+#mainCarrito{
+    background-color: rgb(250, 250, 250);
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-top: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400 ;
+    display:flex ;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.mainCarritoVacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.mainCarritoVacio h2{
+    color: #085C5A;
+    font-size: 30px;
+}
+.mainCarritoVacio button{
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    background-color:  #085C5A;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.mainCarritoRecomendacion{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mainRecomendaciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.mainRecomendaciones img{
+    border-radius: 20px ;
+}
+/* ----------------------------- FIN DE ESTILOS PARA CARRITO */
+
+
