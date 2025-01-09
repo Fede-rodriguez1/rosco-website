@@ -23,37 +23,55 @@
 
     <header id="header">
 
-        <nav id="navBarLeft">
-            <ul>
-                <li><a href="colecciones.html">COLECCIONES</a>
-                    <ul class="subMenuColecciones">
-                        <li><a href="ilustraciones.html"> Ilustraciones</a></li>
-                        <li><a href="botanica.html"> Botánica</a></li>
-                        <li><a href="artistas.html"> Artistas</a></li>
-                        <li><a href="abstractos.html"> Abstractos</a></li>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark text-light  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../icons/logoWhite1.png" alt="logo-navbar"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <li class="nav-item dropdown">
+                    
+                        <a class="nav-link dropdown-toggle" href="colecciones.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">COLECCIONES</a>
+                        
+                        <ul class="dropdown-menu bg-black dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="colecciones.html">General</a></li>
+                            
+                            <li><a class="dropdown-item" href="ilustraciones.html">Ilustraciones</a></li>
+    
+                            <li><a class="dropdown-item" href="botanica.html">Botánica</a></li>
+    
+                            <li><a class="dropdown-item" href="artistas.html">Artistas</a></li>
+    
+                            <li><a class="dropdown-item" href="abstractos.html">Abstractos</a></li>
+                        </ul>
+                    </li>
+    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-dark ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">NOSOTROS</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">CONTÁCTO</a>
+                        </li>                        
                     </ul>
-                </li>
     
-                <li><a href="#">NOSOTROS</a></li>
-    
-                <li><a href="contacto.html">CONTÁCTO</a></li>
-            </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="buscar..." aria-label="Search">
+                        
+                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                    </form>
+                    
+                    <li class="nav-item m-3">
+                        <a class="nav-link active" href="carritodecompras.html"><i class="fa-solid fa-bag-shopping m-2" style="color: #ffffff;" ></i>CARRO</a>
+                    </li>
+                </div>
+            </div>
         </nav>
-        <section class="logoNavbar">
-                <a href="../index.html" class="active"> <img src="../icons/logoWhite1.png" alt="logo-navbar"></a>
-        </section>  
     
-    
-        <nav id="navBarRight">
-            
-            <section class="navbarBuscador">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                <input type="text" placeholder="buscar...">
-            </section>
-    
-            <li><a href="carritodecompras.html"><i class="fa-solid fa-bag-shopping" ></i> CARRO</a></li>
-    
-        </nav>
     </header>
     
     <!-- ESTRUCTURA N°2= main -->
@@ -107,12 +125,12 @@ Gracias por elegirnos!</p>
 
     </main>
     
-    <footer id="footer">
+<footer id="footer">
 
         <section class="footerNewsletter">
     
                 <article class="footerNewsletterTitle">
-                    <h4>SUSCRIBIRSE A NUESTRO NEWSLETTER</h4>
+                    <h6>SUSCRIBIRSE A NUESTRO NEWSLETTER</h6>
                 </article>
     
                 <form action="/action_page.php" method="post">
@@ -127,18 +145,18 @@ Gracias por elegirnos!</p>
                 
                 <article>
                 
-                    <img src="../icons/logoWhite1.png" alt="icono-footer">
+                    <img src="../icons/logowhite1.png" alt="icono-footer">
     
                 </article>
     
                 <article class="footerCopy">
-                    <h6 >&copy; Rosco Design 2024 All rights reserved</h6>
-                    <h6 >Creado por - Santiago Rodríguez</h6>
+                    <h7 >&copy; Rosco Design 2024 All rights reserved</h7>
+                    <h7 >Creado por - Santiago Rodríguez</h7>
                 </article>
         </section>
     
         <section class="footerRedes">
-            <!--/////////////////////////////////// agregar los links -->
+    
             <!-- TARGET:BLANK LO QUE HACE ES QUE AL HACER CLICK NOS ABRE UNA PESTAÑA NUEVA EVITANDO EL REDIRECCIONAMIENTO DE LA MISMA PESTAÑA -->
                 <article class="footerRedesSociales">
                     <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #085c5a;"></i></a>
@@ -161,8 +179,11 @@ Gracias por elegirnos!</p>
     
         </section>
     
-    </footer>
+        </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 </html>

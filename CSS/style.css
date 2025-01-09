@@ -1,7 +1,4 @@
 
-
-
-
 /*Tipografia Montserrat*/
 @font-face {
     font-family: "montserrat";
@@ -19,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px red solid; */
+
 }
 
 ul{
@@ -40,30 +37,7 @@ a{
     text-decoration: none;
 }
 
-/* /////////ESTILOS PARA GENERAR MENU DESPLEGABLE////////////// */
-
-/* PROBLEMA CON LA DISPOSICION DEL SUBMENU, SIN ESE PADDING TOP QUEDA MAL POSICIONADO */
-.subMenuColecciones{
-    position: absolute;
-    display: none;
-    top: 100%;
-}
-
-.subMenuColecciones li{
-    display: block;
-}
-
-
-ul li:hover ul{
-    display: block;
-}
-
-/* ////////////FIN DE ESTILO MENU DESPLEGABLE//////// */
-
-
 /* //////////////////////////// FIN RESET /////////////// */
-
-
 
 /*------------------- ESTILOS PARA BODY */
 #bodyIndex, #bodyColecciones, #bodyNosotros, #bodyContacto, #bodyCarrito, #bodyIlustraciones, #bodyAbstractos, #bodyArtistas, #bodyBotanica{
@@ -75,116 +49,21 @@ ul li:hover ul{
     max-width: 100%;
 }
 
-
-
-
-
 /* -----------------------------------------------------ESTILOS GENERALES PARA HEADER y FOOTER */
 
 /* Estilos de Header */
 
 #header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 100%;
-    height: 100px;
     position:fixed;
     background-color: rgb(0, 0, 0);
     font-family: "montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     z-index: 1;
+    height: 80px;
 }
-
-
-.logoNavbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-
-}
-
-#navBarLeft{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1400px;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-}
-
-
-#navBarLeft li{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-
-}
-#navBarLeft a{
-    margin-top: 15px;
-    align-content: center;
-    font-size: 18px;
-    width: auto;
-    height: 100px;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-}
-
-
-#navBarRight{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 10px;
-    width: 1400px;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-}
-
-.navbarBuscador{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.navbarBuscador input{
-    border-radius: 15px;
-    padding: 5px;
-}
-
-#navBarRight li i{
-    color: rgb(255, 255, 255);
-}
-
-#navBarRight li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    background-color: rgb(0, 0, 0);
-}
-
-#navBarRight a{
-    margin-top: 10px;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
-    font-size: 18px;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-}
-
 
 /* ---------------------estilos en footer */
-
-
 
 #footer{
     background-color: rgb(0, 0, 0);
@@ -212,7 +91,7 @@ ul li:hover ul{
     background-color: #d8d8d8;
     height: 30px;
     border: #d8d8d8;
-    
+
 }
 
 .footerNewsletter button{
@@ -222,8 +101,12 @@ ul li:hover ul{
     color: aliceblue;
     border: #085C5A;
     height: 30px;
+    transition:.1.5s ease;
 }
 
+.footerNewsletter button:hover{
+    transform: scale(1.02)
+}
 .footerLogo{
     background-color: rgb(0, 0, 0);
     height: 100%;
@@ -262,31 +145,11 @@ ul li:hover ul{
     display: flex;
     justify-content: center;
     gap: 20px;
-
 }
 
 
 @media (max-width: 765px) {
-
-    .footerNewsletter input{
-        border-radius: 10px 0px 0 10px;
-        padding: 2px 2px 2px 10px;
-        background-color: #d8d8d8;
-        height: 30px;
-        border: #d8d8d8;
-        
-    }
     
-    .footerNewsletter button{
-        border-radius: 0px 10px 10px 0px;
-        padding: 2px 10px 2px 10px;
-        background-color:#085C5A;
-        color: aliceblue;
-        border: #085C5A;
-        height: 30px;
-
-    }
-
     #footer{
         background-color: rgb(0, 0, 0);
         display: flex;
@@ -296,8 +159,28 @@ ul li:hover ul{
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-    }
-    
+        }
+
+        .footerNewsletter input{
+    border-radius: 10px 0px 0 10px;
+    padding: 2px 2px 2px 10px;
+    background-color: #d8d8d8;
+    height: 30px;
+    border: #d8d8d8;
+
+}
+
+.footerNewsletter button{
+    border-radius: 0px 10px 10px 0px;
+    padding: 2px 10px 2px 10px;
+    background-color:#085C5A;
+    color: aliceblue;
+    border: #085C5A;
+    height: 30px;
+
+}
+
+
     .footerLogo{
         background-color: rgb(0, 0, 0);
         height: 100%;
@@ -320,12 +203,9 @@ ul li:hover ul{
         justify-content: space-evenly;
         background-color: rgb(0, 0, 0);
     }
-    
+
 }
 /*------------------ESTILOS PARA INDEX */
-
-
-
 
 #mainIndex{
     background-color: aliceblue;
@@ -334,24 +214,78 @@ ul li:hover ul{
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
 }
-.bannerIndex{
-    border-radius: 0px 0px 10px 10px;
-}
+
 .mainBoxIndex{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+.mainBoxIndexArticle{
+    overflow: hidden;  
+}
+.mainBoxIndexArticle img{
+    transition:.5s ease;
+}
+.mainBoxIndexArticle img:hover{
+    transform: scale(1.02)
+}
+
+.mainBoxIndex1{
+    position: relative;
+}
+.indexButtonAncla{
+    position: absolute; 
+    top: 50%; 
+    left: 50px; 
+    z-index: 2; 
+    background-color: aliceblue; 
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 5px; 
+    transform: translateY(-50%);
+}
+
+.mainBoxIndex2Article{
+    overflow: hidden;  
+}
+.mainBoxIndex2Article img{
+    transition:.5s ease;
+}
+.mainBoxIndex2Article img:hover{
+    transform: scale(1.02)
+}
+.mainBoxIndex2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.indexButtonAncla2{
+    position: absolute; 
+    top: 50%; 
+    left: 50px; 
+    z-index: 2; 
+    background-color: aliceblue; 
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 5px; 
+    transform: translateY(-50%);
+}
 
 /*--------------------------- ESTILOS PARA COLECCIONES */
 
 #mainColecciones{
     display:flex ;
-    
+
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
@@ -423,7 +357,7 @@ ul li:hover ul{
 /* ESTILOS PARA SUBMENU------ ILUSTRACIONES */
 
 #mainIlustraciones{
-    
+
     display:flex ;
     flex-direction: column;
     background-color: aliceblue;
@@ -442,7 +376,7 @@ ul li:hover ul{
     height: 100%;
     display: flex;
     flex-direction: row;
-    
+
     }
 
     /* CARD NUMERO1 */
@@ -628,7 +562,7 @@ ul li:hover ul{
     height: 100%;
     display: flex;
     flex-direction: row;
-    
+
     }
 
     /* CARD NUMERO1 */
@@ -750,7 +684,7 @@ ul li:hover ul{
 .mainCardBotanica9{
     width: 100%;
     height: 100%;
-    
+
 }
 .mainBotanicaImg9{
     width: 100%;
@@ -820,7 +754,7 @@ ul li:hover ul{
     height: 100%;
     display: flex;
     flex-direction: row;
-    
+
     }
 
     /* CARD NUMERO1 */
@@ -1008,7 +942,7 @@ ul li:hover ul{
     height: 100%;
     display: flex;
     flex-direction: row;
-    
+
     }
 
     /* CARD NUMERO1 */
@@ -1180,12 +1114,12 @@ ul li:hover ul{
 /* ---------------------------ESTILOS PARA SOBRE NOSOTROS */
 
 #mainAboutus{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 0.8fr 1fr 1fr 0.4fr;
     row-gap: 10px;
-    column-gap: 10px; 
-    grid-template-areas: 
+    column-gap: 10px;
+    grid-template-areas:
         "titulo titulo"
         "foto texto"
         "foto foto2"
@@ -1194,7 +1128,7 @@ ul li:hover ul{
     background-color: aliceblue;
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 100px; 
+    padding-top: 100px;
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
@@ -1258,14 +1192,14 @@ ul li:hover ul{
 
 
 @media screen and (max-width: 765px) {
-    
+
     #mainAboutus{
-        display: grid; 
-        grid-template-columns: 1fr ; 
+        display: grid;
+        grid-template-columns: 1fr ;
         grid-template-rows: 100px 1fr 1fr 1fr 1fr;
         row-gap: 10px;
-        column-gap: 10px; 
-        grid-template-areas: 
+        column-gap: 10px;
+        grid-template-areas:
             "titulo"
             "foto"
             "texto"
@@ -1275,30 +1209,30 @@ ul li:hover ul{
         background-color: aliceblue;
         max-width: 1400px;
         margin: 0 auto;
-        padding-top: 100px; 
+        padding-top: 100px;
         min-height: 100vh;
         font-family: "Montserrat", sans-serif;
         font-weight: 100 ;
     }
-    
+
 }
 /* ------------------FIN DE ESTILOS PARA ABOUTUS */
 
 /*--------------------------- ESTILOS PARA CONTACTO */
 
 #mainContacto {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     row-gap: 20px;
-    column-gap: 20px; 
-    grid-template-areas: 
+    column-gap: 20px;
+    grid-template-areas:
         "titulo   titulo"
         "contacto formulario";
     background-color: aliceblue;
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 150px; 
+    padding-top: 150px;
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
@@ -1321,7 +1255,7 @@ ul li:hover ul{
 
 .contactoComunicacion{
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
 
 .contactoMapa{
@@ -1450,12 +1384,12 @@ ul li:hover ul{
 @media screen and (max-width: 765px) {
 
     #mainContacto {
-        display: grid; 
-        grid-template-columns: 1fr ; 
+        display: grid;
+        grid-template-columns: 1fr ;
         grid-template-rows: 100px 1fr auto  1fr;
         row-gap: 20px;
-        column-gap: 20px; 
-        grid-template-areas: 
+        column-gap: 20px;
+        grid-template-areas:
             "titulo"
             "contacto "
             "mapa"
@@ -1463,7 +1397,7 @@ ul li:hover ul{
         background-color: aliceblue;
         max-width: 1400px;
         margin: 0 auto;
-        padding-top: 150px; 
+        padding-top: 150px;
         min-height: 100vh;
         font-family: "Montserrat", sans-serif;
         font-size: 15px;
