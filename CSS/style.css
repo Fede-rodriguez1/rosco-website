@@ -60,7 +60,7 @@ a{
     font-family: "montserrat", sans-serif;
     font-weight: 700;
     z-index: 3;
-    height: 80px;
+    height: auto;
 }
 
 /* ---------------------estilos en footer */
@@ -149,7 +149,7 @@ a{
 
 
 @media (max-width: 765px) {
-    
+
     #footer{
         background-color: rgb(0, 0, 0);
         display: flex;
@@ -226,7 +226,7 @@ a{
 }
 
 .mainBoxIndexArticle{
-    overflow: hidden;  
+    overflow: hidden;
 }
 .mainBoxIndexArticle img{
     transition:.5s ease;
@@ -239,22 +239,22 @@ a{
     position: relative;
 }
 .indexButtonAncla{
-    position: absolute; 
-    top: 50%; 
-    left: 50px; 
-    z-index: 2; 
-    background-color: aliceblue; 
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
     color: rgb(255, 255, 255); /*no cambia */
-    border: none; 
-    padding: 10px 20px; 
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px; 
-    border-radius: 5px; 
+    font-size: 16px;
+    border-radius: 5px;
     transform: translateY(-50%);
 }
 
 .mainBoxIndex2Article{
-    overflow: hidden;  
+    overflow: hidden;
 }
 .mainBoxIndex2Article img{
     transition:.5s ease;
@@ -267,17 +267,17 @@ a{
     margin-bottom: 20px;
 }
 .indexButtonAncla2{
-    position: absolute; 
-    top: 50%; 
-    left: 50px; 
-    z-index: 2; 
-    background-color: aliceblue; 
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
     color: rgb(255, 255, 255); /*no cambia */
-    border: none; 
-    padding: 10px 20px; 
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px; 
-    border-radius: 5px; 
+    font-size: 16px;
+    border-radius: 5px;
     transform: translateY(-50%);
 }
 
@@ -285,7 +285,6 @@ a{
 
 #mainColecciones{
     display:flex ;
-
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
@@ -294,8 +293,12 @@ a{
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
+
+
+
     /* border: 1px red solid; */
 }
+
 
 /* CARACTERISTICAS GENERALES PARA FILA 1 */
 .mainColecciones1  {
@@ -309,6 +312,8 @@ a{
     padding: 10px 10px;
     justify-content: center;
     align-items: center;
+    width: 435px;
+    height: 403px;
 }
 
 .mainColecciones1 img{
@@ -316,39 +321,99 @@ a{
 
 }
 
-.mainColecciones1 h4{
-    align-content: center;
-    height: 30px;
-    justify-self: center;
-    color: #085C5A;
 
+.mainColecciones1 a{
+    color: #ffffff;
+}
+
+.mainCard1 img{
+    position:relative
+}
+.mainCard1 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 125px;
+}
+.mainCard2 img{
+    position:relative
+}
+.mainCard2 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 135px;
+}
+.mainCard3 img{
+    position:relative
+}
+.mainCard3 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 155px;
 }
 
 /* -------------------------FIN DE FILA 1 */
 
 /* CARACTERISTICAS GENERALES PARA FILA 2 */
-.mainColecciones2{
+.mainColecciones2  {
     flex-wrap: wrap;
     color: aliceblue;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 .mainColecciones2 article{
-
     padding: 10px 10px;
     justify-content: center;
     align-items: center;
-
+    width: 435px;
+    height: 403px;
 }
+
 .mainColecciones2 img{
     border-radius: 40px 40px 0px 0px ;
+
 }
-.mainColecciones2 h4{
-    align-content: center;
-    height: 30px;
-    justify-self: center;
-    color: #085C5A;
+
+
+.mainColecciones2 a{
+    color: #ffffff;
+}
+
+.mainCard4 img{
+    position:relative
+}
+.mainCard4 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 110px;
+}
+.mainCard5 img{
+    position:relative
+}
+.mainCard5 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 115px;
+}
+.mainCard6 img{
+    position:relative
+}
+.mainCard6 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 155px;
 }
 
 
@@ -357,186 +422,44 @@ a{
 /* ESTILOS PARA SUBMENU------ ILUSTRACIONES */
 
 #mainIlustraciones{
-
     display:flex ;
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
-    height: 150vh;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px;
     min-height: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
-    row-gap: 100px;
+    row-gap: 50px;
     }
 
-.mainIlustraciones1{
-    width: 100%;
-    height: 100%;
+.mainIlustraciones1, .mainIlustraciones2, .mainIlustraciones3{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 22px;
     }
 
-    /* CARD NUMERO1 */
-.mainCardIlustraciones1{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg1{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion1.jpg);
-}
-
-/* CARD NUMERO2 */
-.mainCardIlustraciones2{
-    width: 100%;
-    height: 100%;
-    }
-.mainIlustracionesImg2{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion2.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO3 */
-.mainCardIlustraciones3{
-    width: 100%;
-    height: 100%;
-    }
-.mainIlustracionesImg3{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion3.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO4 */
-.mainCardIlustraciones4{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg4{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion4.jpg);
-    background-position: center;
-}
-
-
-
-.mainIlustraciones2{
-    width: 100%;
-    height: 100%;
+.mainIlustraciones1 article, .mainIlustraciones2 article, .mainIlustraciones3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px ;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
-/* CARD NUMERO5 */
-.mainCardIlustraciones5{
-    width: 100%;
-    height: 100%;
+.mainColeccionesTextos{
+    padding-left: 10px;
 }
-.mainIlustracionesImg5{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion5.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO6 */
-.mainCardIlustraciones6{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg6{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion6.jpg);
-}
-
-/* CARD NUMEOR7 */
-.mainCardIlustraciones7{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg7{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion7.jpg);
-}
-
-/* CARD NUMERO8 */
-.mainCardIlustraciones8{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg8{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion8.jpg);
-}
-
-
-.mainIlustraciones3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px ;
-}
-
-/* CARD NUMERO9 */
-.mainCardIlustraciones9{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg9{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion12.jpg);
-}
-
-/* CARD NUMERO10 */
-.mainCardIlustraciones10{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg10{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion10.jpg);
-}
-
-/* CARD NUMERO11 */
-.mainCardIlustraciones11{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg11{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion9.jpg);
-}
-
-/* CARD NUMERO12 */
-.mainCardIlustraciones12{
-    width: 100%;
-    height: 100%;
-}
-.mainIlustracionesImg12{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/ilustracion11.jpg);
-}
-
-
-
-
 /* FIN DE ESTILOS ILUSTRACIONES */
 
 /* ESTILOS PARA SUBMENU------ BOTÁNICA */
@@ -546,189 +469,40 @@ a{
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
-    height: 150vh;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px;
     min-height: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
-    row-gap: 100px;
-
-    /* border: 1px red solid;*/
+    row-gap: 50px;
     }
 
-.mainBotanica1{
-    width: 100%;
-    height: 100%;
+.mainBotanica1, .mainBotanica2, .mainBotanica3{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 22px;
     }
 
-    /* CARD NUMERO1 */
-.mainCardBotanica1{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg1{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica1.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO2 */
-.mainCardBotanica2{
-    width: 100%;
-    height: 100%;
-    }
-.mainBotanicaImg2{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica2.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO3 */
-.mainCardBotanica3{
-    width: 100%;
-    height: 100%;
-    }
-.mainBotanicaImg3{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica3.jpg);
-    background-position: center;;
-}
-
-/* CARD NUMERO4 */
-.mainCardBotanica4{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg4{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica4.jpg);
-    background-position: center;
-}
-
-
-
-.mainBotanica2{
-    width: 100%;
-    height: 100%;
+.mainBotanica1 article, .mainBotanica2 article, .mainBotanica3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px ;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
-/* CARD NUMERO5 */
-.mainCardBotanica5{
-    width: 100%;
-    height: 100%;
+.mainColeccionesTextos{
+    padding-left: 10px;
 }
-.mainBotanicaImg5{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica5.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO6 */
-.mainCardBotanica6{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg6{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica6.jpg);
-    background-position: center;
-}
-
-/* CARD NUMEOR7 */
-.mainCardBotanica7{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg7{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica7.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO8 */
-.mainCardBotanica8{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg8{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica8.jpg);
-    background-position: center;
-}
-
-
-.mainBotanica3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px ;
-}
-
-/* CARD NUMERO9 */
-.mainCardBotanica9{
-    width: 100%;
-    height: 100%;
-
-}
-.mainBotanicaImg9{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica9.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO10 */
-.mainCardBotanica10{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg10{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica10.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO11 */
-.mainCardBotanica11{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg11{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/botanica11.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO12 */
-.mainCardBotanica12{
-    width: 100%;
-    height: 100%;
-}
-.mainBotanicaImg12{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/coleccion2.jpg);
-    background-position: center;
-}
-
 /* FIN DE ESTILOS PARA BOTANICA */
 
 /* ESTILOS PARA SUBMENU------ ARTISTAS */
@@ -738,187 +512,41 @@ a{
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
-    height: 150vh;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px;
     min-height: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
-    row-gap: 100px;
-
-    /* border: 1px red solid;*/
+    row-gap: 50px;
     }
 
-.mainArtistas1{
-    width: 100%;
-    height: 100%;
+.mainArtistas1, .mainArtistas2, .mainArtistas3{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 22px;
     }
 
-    /* CARD NUMERO1 */
-.mainCardArtistas1{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg1{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas1.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO2 */
-.mainCardArtistas2{
-    width: 100%;
-    height: 100%;
-    }
-.mainArtistasImg2{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas2.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO3 */
-.mainCardArtistas3{
-    width: 100%;
-    height: 100%;
-    }
-.mainArtistasImg3{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas3.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO4 */
-.mainCardArtistas4{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg4{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas4.jpg);
-    background-position: center;
-}
-
-
-
-.mainArtistas2{
-    width: 100%;
-    height: 100%;
+.mainArtistas1 article, .mainArtistas2 article, .mainArtistas3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px ;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
-/* CARD NUMERO5 */
-.mainCardArtistas5{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg5{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas5.jpg);
-    background-position: center;
+.mainColeccionesTextos{
+    padding-left: 10px;
 }
 
-/* CARD NUMERO6 */
-.mainCardArtistas6{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg6{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas6.jpg);
-    background-position: center;
-}
-
-/* CARD NUMEOR7 */
-.mainCardArtistas7{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg7{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas7.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO8 */
-.mainCardArtistas8{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg8{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas8.jpg);
-    background-position: center;
-}
-
-
-.mainArtistas3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px ;
-}
-
-/* CARD NUMERO9 */
-.mainCardArtistas9{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg9{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas9.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO10 */
-.mainCardArtistas10{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg10{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas10.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO11 */
-.mainCardArtistas11{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg11{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas11.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO12 */
-.mainCardArtistas12{
-    width: 100%;
-    height: 100%;
-}
-.mainArtistasImg12{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/artistas12.jpg);
-    background-position: center;
-}
 /* FIN DE ESTILOS PARA ARTISTAS */
 
 /* ESTILOS PARA SUBMENU------ ARTISTAS */
@@ -928,187 +556,40 @@ a{
     flex-direction: column;
     background-color: aliceblue;
     max-width: 1400px;
-    height: 150vh;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px;
     min-height: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 100 ;
-    row-gap: 100px;
+    row-gap: 50px;
     }
 
-.mainAbstractos1{
-    width: 100%;
-    height: 100%;
+.mainAbstractos1, .mainAbstractos2, .mainAbstractos3{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 22px;
     }
 
-    /* CARD NUMERO1 */
-.mainCardAbstractos1{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg1{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos1.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO2 */
-.mainCardAbstractos2{
-    width: 100%;
-    height: 100%;
-    }
-.mainAbstractosImg2{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos2.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO3 */
-.mainCardAbstractos3{
-    width: 100%;
-    height: 100%;
-    }
-.mainAbstractosImg3{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos3.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO4 */
-.mainCardAbstractos4{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg4{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos4.jpg);
-    background-position: center;
-}
-
-
-
-.mainAbstractos2{
-    width: 100%;
-    height: 100%;
+.mainAbstractos1 article, .mainAbstractos2 article, .mainAbstractos3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px ;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
-/* CARD NUMERO5 */
-.mainCardAbstractos5{
-    width: 100%;
-    height: 100%;
+.mainColeccionesTextos{
+    padding-left: 10px;
 }
-.mainAbstractosImg5{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos5.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO6 */
-.mainCardAbstractos6{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg6{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos6.jpg);
-    background-position: center;
-}
-
-/* CARD NUMEOR7 */
-.mainCardAbstractos7{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg7{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos7.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO8 */
-.mainCardAbstractos8{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg8{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos8.jpg);
-    background-position: center;
-}
-
-
-.mainAbstractos3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px ;
-}
-
-/* CARD NUMERO9 */
-.mainCardAbstractos9{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg9{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos9.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO10 */
-.mainCardAbstractos10{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg10{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos10.jpg);
-    background-position: center;
-
-}
-
-/* CARD NUMERO11 */
-.mainCardAbstractos11{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg11{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos11.jpg);
-    background-position: center;
-}
-
-/* CARD NUMERO12 */
-.mainCardAbstractos12{
-    width: 100%;
-    height: 100%;
-}
-.mainAbstractosImg12{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/abstractos12.jpg);
-    background-position: center;
-}
-
 
 
 /* ---------------------------ESTILOS PARA SOBRE NOSOTROS */
