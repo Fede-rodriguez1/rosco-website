@@ -1,0 +1,43 @@
+/* ESTILOS PARA SUBMENU------ GENERALES */
+
+#mainCardsColecciones{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 50px;
+    }
+
+.mainCardsColecciones1, .mainCardsColecciones2, .mainCardsColecciones3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    }
+
+.mainCardsColecciones1 article, .mainCardsColecciones2 article, .mainCardsColecciones3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.mainColeccionesTextos{
+    padding-left: 10px;
+}
+/* FIN DE ESTILOS CARD COLECCIONES GENERALES */
+

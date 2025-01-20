@@ -1,0 +1,75 @@
+/*------------------ESTILOS PARA INDEX */
+
+#mainIndex{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.mainBoxIndex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mainBoxIndexArticle{
+    overflow: hidden;
+}
+.mainBoxIndexArticle img{
+    transition:.5s ease;
+}
+.mainBoxIndexArticle img:hover{
+    transform: scale(1.02)
+}
+
+.mainBoxIndex1{
+    position: relative;
+}
+.indexButtonAncla{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.mainBoxIndex2Article{
+    overflow: hidden;
+}
+.mainBoxIndex2Article img{
+    transition:.5s ease;
+}
+.mainBoxIndex2Article img:hover{
+    transform: scale(1.02)
+}
+.mainBoxIndex2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.indexButtonAncla2{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}

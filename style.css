@@ -1,0 +1,819 @@
+
+
+/* COPIA DE SEGURIDAD DE CSS */
+
+
+/*Tipografia Montserrat*/
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/*Tipografia Roboto*/
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+/*-------------------------- RESETEO DE HTML */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    list-style:none ;
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* //////////////////////////// FIN RESET /////////////// */
+
+/*------------------- ESTILOS PARA BODY */
+#bodyIndex, #bodyColecciones, #bodyNosotros, #bodyContacto, #bodyCarrito, #bodyIlustraciones, #bodyAbstractos, #bodyArtistas, #bodyBotanica{
+    background-color: rgb(250, 250, 250);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing:auto;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+
+
+/* -----------------------------------------------------ESTILOS GENERALES PARA HEADER y FOOTER */
+
+/* Estilos de Header */
+
+#header{
+    width: 100%;
+    position:fixed;
+    background-color: rgb(0, 0, 0);
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    z-index: 3;
+    height: auto;
+}
+
+/* ---------------------estilos en footer */
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
+}
+
+.footerNewsletter{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 5px;
+    font-size: 15px;
+
+}
+.footerNewsletter input{
+    border-radius: 10px 0px 0 10px;
+    padding: 2px 2px 2px 10px;
+    background-color: #d8d8d8;
+    height: 30px;
+    border: #d8d8d8;
+
+}
+
+.footerNewsletter button{
+    border-radius: 0px 10px 10px 0px;
+    padding: 2px 10px 2px 10px;
+    background-color:#085C5A;
+    color: aliceblue;
+    border: #085C5A;
+    height: 30px;
+    transition:.1.5s ease;
+}
+
+.footerNewsletter button:hover{
+    transform: scale(1.02)
+}
+.footerLogo{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerCopy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color:aliceblue;
+
+}
+
+.footerRedes{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+}
+.footerRedesSociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footerPagos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 765px) {
+
+    #footer{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        }
+
+        .footerNewsletter input{
+    border-radius: 10px 0px 0 10px;
+    padding: 2px 2px 2px 10px;
+    background-color: #d8d8d8;
+    height: 30px;
+    border: #d8d8d8;
+
+}
+
+.footerNewsletter button{
+    border-radius: 0px 10px 10px 0px;
+    padding: 2px 10px 2px 10px;
+    background-color:#085C5A;
+    color: aliceblue;
+    border: #085C5A;
+    height: 30px;
+
+}
+
+
+    .footerLogo{
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px ;
+        z-index: 1;
+
+    }
+
+    .footerRedes{
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+    }
+
+}
+/*------------------ESTILOS PARA INDEX */
+
+#mainIndex{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.mainBoxIndex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mainBoxIndexArticle{
+    overflow: hidden;
+}
+.mainBoxIndexArticle img{
+    transition:.5s ease;
+}
+.mainBoxIndexArticle img:hover{
+    transform: scale(1.02)
+}
+
+.mainBoxIndex1{
+    position: relative;
+}
+.indexButtonAncla{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.mainBoxIndex2Article{
+    overflow: hidden;
+}
+.mainBoxIndex2Article img{
+    transition:.5s ease;
+}
+.mainBoxIndex2Article img:hover{
+    transform: scale(1.02)
+}
+.mainBoxIndex2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.indexButtonAncla2{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+    background-color: aliceblue;
+    color: rgb(255, 255, 255); /*no cambia */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+/*--------------------------- ESTILOS PARA COLECCIONES */
+
+#mainColecciones{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+
+}
+
+/* CARACTERISTICAS GENERALES PARA FILA 1 */
+.mainColecciones1  {
+    flex-wrap: wrap;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.mainColecciones1 article{
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+    height: 403px;
+}
+
+.mainColecciones1 img{
+    border-radius: 40px 40px 0px 0px ;
+
+}
+
+
+.mainColecciones1 a{
+    color: #ffffff;
+}
+
+.mainCard1 img{
+    position:relative
+}
+.mainCard1 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 125px;
+}
+.mainCard2 img{
+    position:relative
+}
+.mainCard2 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 135px;
+}
+.mainCard3 img{
+    position:relative
+}
+.mainCard3 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 155px;
+}
+/* -------------------------FIN DE FILA 1 */
+
+/* CARACTERISTICAS GENERALES PARA FILA 2 */
+.mainColecciones2  {
+    flex-wrap: wrap;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.mainColecciones2 article{
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+    height: 403px;
+}
+
+.mainColecciones2 img{
+    border-radius: 40px 40px 0px 0px ;
+
+}
+
+.mainColecciones2 a{
+    color: #ffffff;
+}
+
+.mainCard4 img{
+    position:relative
+}
+.mainCard4 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 110px;
+}
+.mainCard5 img{
+    position:relative
+}
+.mainCard5 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 115px;
+}
+.mainCard6 img{
+    position:relative
+}
+.mainCard6 h4{
+    position:absolute;
+    background-color: #05302f;
+    width: 415px;
+    color: white;
+    padding-left: 155px;
+}
+
+/* --------------------FIN DE ESTILOS PARA COLECCIONES */
+
+/* ESTILOS PARA SUBMENU------ GENERALES */
+
+#mainCardsColecciones{
+    display:flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px;
+    min-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+    row-gap: 50px;
+    }
+
+.mainCardsColecciones1, .mainCardsColecciones2, .mainCardsColecciones3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    }
+
+.mainCardsColecciones1 article, .mainCardsColecciones2 article, .mainCardsColecciones3 article {
+    background-color:#05302f;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    min-width: 200px; 
+    max-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.mainColeccionesTextos{
+    padding-left: 10px;
+}
+/* FIN DE ESTILOS CARD COLECCIONES GENERALES */
+
+
+
+
+/* ---------------------------ESTILOS PARA SOBRE NOSOTROS */
+
+#mainAboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 0.8fr 1fr 1fr 0.4fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas:
+        "titulo titulo"
+        "foto texto"
+        "foto foto2"
+        "texto2 foto2"
+        "fotos fotos";
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100 ;
+}
+
+.mainAboutusTitulo{
+    grid-area: titulo;
+    align-self: center;
+    justify-self: center;
+    color: #085C5A;
+    font-size: 25px;
+}
+
+.mainAboutusFoto1{
+    grid-area: foto;
+    background-image: url(../images/aboutus1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 20px;
+    background-position: center;
+}
+.mainAboutusTexto1{
+    grid-area: texto;
+    padding: 50px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.mainAboutusFoto2{
+    grid-area: foto2;
+    background-image: url(../images/aboutus2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 20px;
+    background-position: center;
+
+}
+.mainAboutusTexto2{
+    grid-area:texto2 ;
+    padding: 50px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300 ;
+}
+
+.mainAboutusCarrusel{
+    grid-area: fotos;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-self: center;
+    align-items: center;
+}
+
+.mainAboutusCarrusel img{
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 765px) {
+    #mainAboutus{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas:
+            "titulo"
+            "foto"
+            "texto"
+            "foto2"
+            "texto2"
+            "fotos ";
+        background-color: aliceblue;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 100px;
+        min-height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100 ;
+    }
+}
+/* ------------------FIN DE ESTILOS PARA ABOUTUS */
+
+/*--------------------------- ESTILOS PARA CONTACTO */
+
+#mainContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas:
+        "titulo   titulo"
+        "contacto formulario";
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 150px;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.mainContactoTitulo{
+    grid-area: titulo;
+    align-self: center;
+    justify-self: center;
+    color: #085C5A;
+    font-size: 25px;
+}
+
+.contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column
+}
+
+.contactoComunicacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactoMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoMapa iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.mainFormulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.formulario1{
+    display: flex;
+    column-gap: 20px;
+}
+
+.contactoInput{
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid #085C5A;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contactoTextarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 10px 12px 10px;
+    color: black;
+    background-color: #d8f0ef;
+    box-sizing: border-box;
+    border: 2px solid #085C5A;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contactoTextarea:focus{
+    border: 3px solid #085C5A;
+}
+
+.contactoBoton{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 10px 12px 10px;
+    box-sizing: border-box;
+    border: 2px solid #05302f;
+    background-color: #085C5A;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.contactoTelefono{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoUbicacion{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoEmail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.contactoRedes{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.iconosRedes{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-content: space-evenly;
+    align-self: center;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 765px) {
+
+    #mainContacto {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 1fr auto  1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas:
+            "titulo"
+            "contacto "
+            "mapa"
+            "formulario";
+        background-color: aliceblue;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 150px;
+        min-height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+
+
+
+/* -------------------------------FIN DE ESTILOS PARA CONTACTOS */
+
+
+
+/* -----------------------------ESTILOS PARA CARRITO */
+
+#mainCarrito{
+    background-color: rgb(250, 250, 250);
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-top: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400 ;
+    display:flex ;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.mainCarritoVacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.mainCarritoVacio h2{
+    color: #085C5A;
+    font-size: 30px;
+}
+.mainCarritoVacio button{
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    background-color:  #085C5A;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.mainCarritoRecomendacion{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mainRecomendaciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.mainRecomendaciones img{
+    border-radius: 20px ;
+}
+/* ----------------------------- FIN DE ESTILOS PARA CARRITO */
+
+
