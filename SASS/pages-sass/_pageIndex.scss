@@ -1,7 +1,7 @@
 /*------------------ESTILOS PARA INDEX */
 
 #mainIndex{
-    background-color: aliceblue;
+    background-color: rgb(247, 247, 247);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -9,67 +9,97 @@
     margin: 0 auto;
     padding-top: 80px;
     text-align: center;
-}
+    
+    .mainBoxIndex{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+            article{
+                overflow: hidden;
+                
+                    img{
+                        object-fit: cover; 
+                        transition: transform 0.5s ease;
+                    }
+                    img:hover{
+                        transform: scale(1.02)
+                    }
+                    p{
+                        transition:.5s ease;
+                    }
+                    p:hover{
+                        text-decoration: underline;
+                        transform: none;
+                        cursor: pointer;
+                    }
+                }
+    }
+    .mainBoxIndex1{
+        position: relative;
+            button{
+                position: absolute;
+                top: 50%;
+                left: 50px;
+                z-index: 2;
+                background-color: aliceblue;
+                color: rgb(255, 255, 255); 
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                transform: translateY(-50%);
+        }
+        button:hover{
+            background-color:#c2c2c2;
+            
+        }
+    }
+    .mainBoxIndex2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
 
-.mainBoxIndex{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 20px;
+        article{
+            img{
+                object-fit: cover; 
+                transition: transform 0.5s ease;
+            }
+            img:hover{
+                transform: scale(1.02)
+            }
+            p{
+                transition:.5s ease;
+            }
+            p:hover{
+                text-decoration: underline;
+                transform: none;
+                cursor: pointer;
+            }
+        }
 }
-
-.mainBoxIndexArticle{
-    overflow: hidden;
-}
-.mainBoxIndexArticle img{
-    transition:.5s ease;
-}
-.mainBoxIndexArticle img:hover{
-    transform: scale(1.02)
-}
-
-.mainBoxIndex1{
-    position: relative;
-}
-.indexButtonAncla{
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    z-index: 2;
-    background-color: aliceblue;
-    color: rgb(255, 255, 255); /*no cambia */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transform: translateY(-50%);
-}
-
-.mainBoxIndex2Article{
-    overflow: hidden;
-}
-.mainBoxIndex2Article img{
-    transition:.5s ease;
-}
-.mainBoxIndex2Article img:hover{
-    transform: scale(1.02)
-}
-.mainBoxIndex2 {
+.mainBoxIndex3 {
     position: relative;
     margin-bottom: 20px;
+    button{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        z-index: 2;
+        background-color: aliceblue;
+        color: rgb(255, 255, 255); /*no cambia */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        transform: translateY(-50%);
+    }
+    button:hover{
+        background-color:#c2c2c2;
+        
+    }
 }
-.indexButtonAncla2{
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    z-index: 2;
-    background-color: aliceblue;
-    color: rgb(255, 255, 255); /*no cambia */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transform: translateY(-50%);
 }

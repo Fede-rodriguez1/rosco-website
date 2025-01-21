@@ -35,7 +35,7 @@ a {
 /* //////////////////////////// FIN RESET /////////////// */
 /*------------------- ESTILOS PARA BODY */
 #bodyIndex, #bodyColecciones, #bodyNosotros, #bodyContacto, #bodyCarrito, #bodyIlustraciones, #bodyAbstractos, #bodyArtistas, #bodyBotanica {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(247, 247, 247);
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-optical-sizing: auto;
@@ -65,8 +65,7 @@ a {
   width: 100%;
   height: 130px;
 }
-
-.footerNewsletter {
+#footer .footerNewsletter {
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -74,16 +73,14 @@ a {
   gap: 5px;
   font-size: 15px;
 }
-
-.footerNewsletter input {
+#footer .footerNewsletter input {
   border-radius: 10px 0px 0 10px;
   padding: 2px 2px 2px 10px;
   background-color: #d8d8d8;
   height: 30px;
   border: #d8d8d8;
 }
-
-.footerNewsletter button {
+#footer .footerNewsletter button {
   border-radius: 0px 10px 10px 0px;
   padding: 2px 10px 2px 10px;
   background-color: #085C5A;
@@ -92,12 +89,10 @@ a {
   height: 30px;
   transition: 0.1 0.5s ease;
 }
-
-.footerNewsletter button:hover {
+#footer .footerNewsletter button:hover {
   transform: scale(1.02);
 }
-
-.footerLogo {
+#footer .footerLogo {
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: auto;
@@ -106,16 +101,14 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-
-.footerCopy {
+#footer .footerLogo .footerCopy {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 12px;
   color: aliceblue;
 }
-
-.footerRedes {
+#footer .footerRedes {
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 200px;
@@ -124,14 +117,12 @@ a {
   justify-content: space-evenly;
   background-color: rgb(0, 0, 0);
 }
-
-.footerRedesSociales {
+#footer .footerRedes .footerRedesSociales {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
-.footerPagos {
+#footer .footerRedes .footerPagos {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -184,9 +175,10 @@ a {
     background-color: rgb(0, 0, 0);
   }
 }
+/*PAGES*/
 /*------------------ESTILOS PARA INDEX */
 #mainIndex {
-  background-color: aliceblue;
+  background-color: rgb(247, 247, 247);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -195,37 +187,40 @@ a {
   padding-top: 80px;
   text-align: center;
 }
-
-.mainBoxIndex {
+#mainIndex .mainBoxIndex {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
-.mainBoxIndexArticle {
+#mainIndex .mainBoxIndex article {
   overflow: hidden;
 }
-
-.mainBoxIndexArticle img {
-  transition: 0.5s ease;
+#mainIndex .mainBoxIndex article img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
-
-.mainBoxIndexArticle img:hover {
+#mainIndex .mainBoxIndex article img:hover {
   transform: scale(1.02);
 }
-
-.mainBoxIndex1 {
+#mainIndex .mainBoxIndex article p {
+  transition: 0.5s ease;
+}
+#mainIndex .mainBoxIndex article p:hover {
+  text-decoration: underline;
+  transform: none;
+  cursor: pointer;
+}
+#mainIndex .mainBoxIndex1 {
   position: relative;
 }
-
-.indexButtonAncla {
+#mainIndex .mainBoxIndex1 button {
   position: absolute;
   top: 50%;
   left: 50px;
   z-index: 2;
   background-color: aliceblue;
-  color: rgb(255, 255, 255); /*no cambia */
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -233,25 +228,35 @@ a {
   border-radius: 5px;
   transform: translateY(-50%);
 }
-
-.mainBoxIndex2Article {
-  overflow: hidden;
+#mainIndex .mainBoxIndex1 button:hover {
+  background-color: #c2c2c2;
 }
-
-.mainBoxIndex2Article img {
-  transition: 0.5s ease;
+#mainIndex .mainBoxIndex2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-
-.mainBoxIndex2Article img:hover {
+#mainIndex .mainBoxIndex2 article img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+#mainIndex .mainBoxIndex2 article img:hover {
   transform: scale(1.02);
 }
-
-.mainBoxIndex2 {
+#mainIndex .mainBoxIndex2 article p {
+  transition: 0.5s ease;
+}
+#mainIndex .mainBoxIndex2 article p:hover {
+  text-decoration: underline;
+  transform: none;
+  cursor: pointer;
+}
+#mainIndex .mainBoxIndex3 {
   position: relative;
   margin-bottom: 20px;
 }
-
-.indexButtonAncla2 {
+#mainIndex .mainBoxIndex3 button {
   position: absolute;
   top: 50%;
   left: 50px;
@@ -264,140 +269,99 @@ a {
   font-size: 16px;
   border-radius: 5px;
   transform: translateY(-50%);
+}
+#mainIndex .mainBoxIndex3 button:hover {
+  background-color: #c2c2c2;
 }
 
 /*--------------------------- ESTILOS PARA COLECCIONES */
 #mainColecciones {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgb(247, 247, 247);
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 100px;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
+  /* CARACTERISTICAS GENERALES PARA FILA 1 */
 }
-
-/* CARACTERISTICAS GENERALES PARA FILA 1 */
-.mainColecciones1 {
+#mainColecciones .mainColecciones1 {
   flex-wrap: wrap;
   color: aliceblue;
   display: flex;
   justify-content: center;
 }
-
-.mainColecciones1 article {
+#mainColecciones .mainColecciones1 article {
   padding: 10px 10px;
   justify-content: center;
   align-items: center;
   width: 435px;
   height: 403px;
 }
-
-.mainColecciones1 img {
+#mainColecciones .mainColecciones1 img {
   border-radius: 40px 40px 0px 0px;
+  position: relative;
+  transition: box-shadow 0.5s ease, border-radius 0.5s ease;
 }
-
-.mainColecciones1 a {
+#mainColecciones .mainColecciones1 img:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px 0px 0px;
+}
+#mainColecciones .mainColecciones1 a {
   color: #ffffff;
 }
-
-.mainCard1 img {
-  position: relative;
+#mainColecciones .mainColecciones1 a:hover {
+  color: #cecece;
 }
-
-.mainCard1 h4 {
+#mainColecciones .mainColecciones1 h4 {
   position: absolute;
   background-color: #05302f;
   width: 415px;
   color: white;
   padding-left: 125px;
 }
-
-.mainCard2 img {
-  position: relative;
-}
-
-.mainCard2 h4 {
-  position: absolute;
-  background-color: #05302f;
-  width: 415px;
-  color: white;
-  padding-left: 135px;
-}
-
-.mainCard3 img {
-  position: relative;
-}
-
-.mainCard3 h4 {
-  position: absolute;
-  background-color: #05302f;
-  width: 415px;
-  color: white;
+#mainColecciones .mainColecciones1 .mainCard3 h4 {
   padding-left: 155px;
 }
-
-/* -------------------------FIN DE FILA 1 */
-/* CARACTERISTICAS GENERALES PARA FILA 2 */
-.mainColecciones2 {
+#mainColecciones .mainColecciones2 {
   flex-wrap: wrap;
   color: aliceblue;
   display: flex;
   justify-content: center;
 }
-
-.mainColecciones2 article {
+#mainColecciones .mainColecciones2 article {
   padding: 10px 10px;
   justify-content: center;
   align-items: center;
   width: 435px;
   height: 403px;
 }
-
-.mainColecciones2 img {
+#mainColecciones .mainColecciones2 img {
   border-radius: 40px 40px 0px 0px;
+  position: relative;
+  transition: box-shadow 0.5s ease, border-radius 0.5s ease;
 }
-
-.mainColecciones2 a {
+#mainColecciones .mainColecciones2 img:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px 0px 0px;
+}
+#mainColecciones .mainColecciones2 a {
   color: #ffffff;
 }
-
-.mainCard4 img {
-  position: relative;
+#mainColecciones .mainColecciones2 a:hover {
+  color: #cecece;
 }
-
-.mainCard4 h4 {
+#mainColecciones .mainColecciones2 h4 {
   position: absolute;
   background-color: #05302f;
   width: 415px;
   color: white;
   padding-left: 110px;
 }
-
-.mainCard5 img {
-  position: relative;
-}
-
-.mainCard5 h4 {
-  position: absolute;
-  background-color: #05302f;
-  width: 415px;
-  color: white;
-  padding-left: 115px;
-}
-
-.mainCard6 img {
-  position: relative;
-}
-
-.mainCard6 h4 {
-  position: absolute;
-  background-color: #05302f;
-  width: 415px;
-  color: white;
-  padding-left: 155px;
+#mainColecciones .mainColecciones2 .mainCard6 h4 {
+  padding-left: 165px;
 }
 
 /* --------------------FIN DE ESTILOS PARA COLECCIONES */
@@ -405,7 +369,7 @@ a {
 #mainCardsColecciones {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgb(247, 247, 247);
   max-width: 1400px;
   margin: 0 auto;
   padding: 100px;
@@ -414,15 +378,13 @@ a {
   font-weight: 100;
   row-gap: 50px;
 }
-
-.mainCardsColecciones1, .mainCardsColecciones2, .mainCardsColecciones3 {
+#mainCardsColecciones .mainCardsColecciones1, #mainCardsColecciones .mainCardsColecciones2, #mainCardsColecciones .mainCardsColecciones3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 22px;
 }
-
-.mainCardsColecciones1 article, .mainCardsColecciones2 article, .mainCardsColecciones3 article {
+#mainCardsColecciones .mainCardsColecciones1 article, #mainCardsColecciones .mainCardsColecciones2 article, #mainCardsColecciones .mainCardsColecciones3 article {
   background-color: #05302f;
   color: white;
   border-radius: 10px 10px 0px 0px;
@@ -436,10 +398,21 @@ a {
   flex-direction: column;
   align-items: left;
   text-align: left;
+  position: relative;
+  transition: box-shadow 0.5s ease, border-radius 0.5s ease, transform 0.5s ease;
 }
-
-.mainColeccionesTextos {
+#mainCardsColecciones .mainCardsColecciones1 article:hover, #mainCardsColecciones .mainCardsColecciones2 article:hover, #mainCardsColecciones .mainCardsColecciones3 article:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0px 0px;
+  transform: scale(1.02);
+}
+#mainCardsColecciones .mainCardsColecciones1 .mainColeccionesTextos, #mainCardsColecciones .mainCardsColecciones2 .mainColeccionesTextos, #mainCardsColecciones .mainCardsColecciones3 .mainColeccionesTextos {
   padding-left: 10px;
+}
+#mainCardsColecciones .mainCardsColecciones1 .mainColeccionesTextos:hover, #mainCardsColecciones .mainCardsColecciones2 .mainColeccionesTextos:hover, #mainCardsColecciones .mainCardsColecciones3 .mainColeccionesTextos:hover {
+  padding-left: 10px;
+  color: #f1f1f1;
+  cursor: pointer;
 }
 
 /* FIN DE ESTILOS CARD COLECCIONES GENERALES */
@@ -451,7 +424,7 @@ a {
   row-gap: 10px;
   column-gap: 10px;
   grid-template-areas: "titulo titulo" "foto texto" "foto foto2" "texto2 foto2" "fotos fotos";
-  background-color: aliceblue;
+  background-color: rgb(247, 247, 247);
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 100px;
@@ -459,16 +432,14 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
 }
-
-.mainAboutusTitulo {
+#mainAboutus .mainAboutusTitulo {
   grid-area: titulo;
   align-self: center;
   justify-self: center;
   color: #085C5A;
   font-size: 25px;
 }
-
-.mainAboutusFoto1 {
+#mainAboutus .mainAboutusFoto1 {
   grid-area: foto;
   background-image: url(../images/aboutus1.jpg);
   background-size: cover;
@@ -477,16 +448,14 @@ a {
   margin: 20px;
   background-position: center;
 }
-
-.mainAboutusTexto1 {
+#mainAboutus .mainAboutusTexto1 {
   grid-area: texto;
   padding: 50px;
   align-self: center;
   font-size: 18px;
   font-weight: 300;
 }
-
-.mainAboutusFoto2 {
+#mainAboutus .mainAboutusFoto2 {
   grid-area: foto2;
   background-image: url(../images/aboutus2.jpg);
   background-size: cover;
@@ -495,16 +464,14 @@ a {
   margin: 20px;
   background-position: center;
 }
-
-.mainAboutusTexto2 {
+#mainAboutus .mainAboutusTexto2 {
   grid-area: texto2;
   padding: 50px;
   align-self: center;
   font-size: 18px;
   font-weight: 300;
 }
-
-.mainAboutusCarrusel {
+#mainAboutus .mainAboutusCarrusel {
   grid-area: fotos;
   height: 250px;
   display: flex;
@@ -513,8 +480,7 @@ a {
   justify-self: center;
   align-items: center;
 }
-
-.mainAboutusCarrusel img {
+#mainAboutus .mainAboutusCarrusel img {
   border-radius: 10px;
 }
 
@@ -526,7 +492,7 @@ a {
     row-gap: 10px;
     column-gap: 10px;
     grid-template-areas: "titulo" "foto" "texto" "foto2" "texto2" "fotos ";
-    background-color: aliceblue;
+    background-color: rgb(247, 247, 247);
     max-width: 1400px;
     margin: 0 auto;
     padding-top: 100px;
@@ -544,7 +510,7 @@ a {
   row-gap: 20px;
   column-gap: 20px;
   grid-template-areas: "titulo   titulo" "contacto formulario";
-  background-color: aliceblue;
+  background-color: rgb(247, 247, 247);
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 150px;
@@ -553,39 +519,82 @@ a {
   font-size: 15px;
   font-weight: 300;
 }
-
-.mainContactoTitulo {
+#mainContacto .mainContactoTitulo {
   grid-area: titulo;
   align-self: center;
   justify-self: center;
   color: #085C5A;
   font-size: 25px;
 }
-
-.contacto {
+#mainContacto .contacto {
   grid-area: contacto;
   display: flex;
   flex-direction: column;
 }
-
-.contactoComunicacion {
+#mainContacto .contacto .contactoComunicacion {
   display: flex;
   justify-content: space-evenly;
 }
-
-.contactoMapa {
+#mainContacto .contacto .contactoComunicacion .contactoTelefono {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: auto;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+#mainContacto .contacto .contactoComunicacion .contactoUbicacion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: auto;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+#mainContacto .contacto .contactoComunicacion .contactoEmail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  width: auto;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+#mainContacto .contacto .contactoComunicacion .contactoRedes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: auto;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+#mainContacto .contacto .contactoComunicacion .contactoRedes .iconosRedes {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-content: space-evenly;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-evenly;
+}
+#mainContacto .contacto .contactoMapa {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.contactoMapa iframe {
+#mainContacto .contacto .contactoMapa iframe {
   width: 100%;
   height: 400px;
   border: none;
 }
-
-.mainFormulario {
+#mainContacto .mainFormulario {
   grid-area: formulario;
   display: flex;
   flex-direction: column;
@@ -595,13 +604,11 @@ a {
   font-weight: 600;
   font-style: normal;
 }
-
-.formulario1 {
+#mainContacto .mainFormulario .formulario1 {
   display: flex;
   column-gap: 20px;
 }
-
-.contactoInput {
+#mainContacto .mainFormulario .formulario1 .contactoInput {
   width: 100%;
   padding: 12px 10px 12px 10px;
   color: black;
@@ -611,8 +618,17 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
-.contactoTextarea {
+#mainContacto .mainFormulario .contactoInput {
+  width: 100%;
+  padding: 12px 10px 12px 10px;
+  color: black;
+  box-sizing: border-box;
+  border: 2px solid #085C5A;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#mainContacto .mainFormulario .contactoTextarea {
   width: 100%;
   height: 150px;
   padding: 12px 10px 12px 10px;
@@ -624,12 +640,10 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
-.contactoTextarea:focus {
+#mainContacto .mainFormulario .contactoTextarea:focus {
   border: 3px solid #085C5A;
 }
-
-.contactoBoton {
+#mainContacto .mainFormulario button {
   width: 100%;
   margin-top: 10px;
   font-size: 15px;
@@ -640,60 +654,13 @@ a {
   background-color: #085C5A;
   color: aliceblue;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
-
-.contactoTelefono {
-  display: flex;
-  flex-direction: column;
-  row-gap: 25px;
-  width: auto;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-}
-
-.contactoUbicacion {
-  display: flex;
-  flex-direction: column;
-  row-gap: 25px;
-  width: auto;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-}
-
-.contactoEmail {
-  display: flex;
-  flex-direction: column;
-  row-gap: 35px;
-  width: auto;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-}
-
-.contactoRedes {
-  display: flex;
-  flex-direction: column;
-  row-gap: 35px;
-  width: auto;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-}
-
-.iconosRedes {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  align-content: space-evenly;
-  align-self: center;
-  justify-self: center;
-  justify-content: space-evenly;
+#mainContacto .mainFormulario button:hover {
+  background-color: #05302f;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 765px) {
@@ -717,7 +684,7 @@ a {
 /* -------------------------------FIN DE ESTILOS PARA CONTACTOS */
 /* -----------------------------ESTILOS PARA CARRITO */
 #mainCarrito {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(247, 247, 247);
   max-width: 1700px;
   margin: 0 auto;
   padding-top: 150px;
@@ -727,44 +694,55 @@ a {
   text-align: center;
   flex-direction: column;
 }
-
-.mainCarritoVacio {
+#mainCarrito .mainCarritoVacio {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 400px;
 }
-
-.mainCarritoVacio h2 {
+#mainCarrito .mainCarritoVacio h2 {
   color: #085C5A;
   font-size: 30px;
 }
-
-.mainCarritoVacio button {
-  font-size: 18px;
+#mainCarrito .mainCarritoVacio button {
+  font-size: 15px;
   height: 50px;
   width: 200px;
   background-color: #085C5A;
   color: aliceblue;
   border-radius: 10px;
 }
-
-.mainCarritoRecomendacion {
+#mainCarrito .mainCarritoVacio button:hover {
+  background-color: #05302f;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#mainCarrito .mainCarritoRecomendacion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.mainRecomendaciones {
+#mainCarrito .mainRecomendaciones {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-.mainRecomendaciones img {
+#mainCarrito .mainRecomendaciones img {
   border-radius: 20px;
+  transition: box-shadow 0.5s ease, border-radius 0.5s ease, transform 0.5s ease;
+}
+#mainCarrito .mainRecomendaciones img:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transform: scale(1.02);
+}
+#mainCarrito .mainRecomendaciones p:hover {
+  color: #05302f;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* ----------------------------- FIN DE ESTILOS PARA CARRITO */
