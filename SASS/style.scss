@@ -1,18 +1,18 @@
-@use "../SASS/presets/reset";
-@use "../SASS/presets/body";
-@use "../SASS/presets/header";
-@use "../SASS/presets/footer";
+@use "presets/reset";
+@use "presets/body";
+@use "presets/header";
+@use "presets/footer";
 
 /*PAGES*/
-@use "../SASS/pages-sass/pageIndex";
-@use "../SASS/pages-sass/pageColecciones";
-@use "../SASS/presets/submenuColecciones";
-@use "../SASS/pages-sass/pageSobreNosotros";
-@use "../SASS/pages-sass/pageContacto";
-@use"../SASS/pages-sass/pageCarrito";
+@use "pages-sass/pageIndex";
+@use "pages-sass/pageColecciones";
+@use "presets/submenuColecciones";
+@use "pages-sass/pageSobreNosotros";
+@use "pages-sass/pageContacto";
+@use"pages-sass/pageCarrito";
 
 
- 
+
 
 
 

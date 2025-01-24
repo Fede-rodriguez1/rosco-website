@@ -28,15 +28,21 @@
             grid-area: contacto;
             display: flex;
             flex-direction: column;
+            gap: 2px;
             .contactoComunicacion{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap:30px;
+                align-items: center;
+                text-align: center;
+
                 .contactoTelefono{
                     display: flex;
                     flex-direction: column;
                     row-gap: 25px;
                     width: auto;
-                    height: 200px;
+                    height: 150px;
                     align-items: center;
                     justify-content: center;
                     width: 150px;
@@ -46,7 +52,7 @@
                     flex-direction: column;
                     row-gap: 25px;
                     width: auto;
-                    height: 200px;
+                    height: 150px;
                     align-items: center;
                     justify-content: center;
                     width: 150px;
@@ -54,22 +60,31 @@
                 .contactoEmail{
                     display: flex;
                     flex-direction: column;
-                    row-gap: 35px;
+                    row-gap: 30px;
                     width: auto;
-                    height: 200px;
+                    height: 150px;
                     align-items: center;
                     justify-content: center;
                     width: 150px;
+                    p{
+                        padding-bottom: 10px;
+                    }
                 }                
                 .contactoRedes{
                     display: flex;
                     flex-direction: column;
-                    row-gap: 25px;
+                    row-gap: 30px;
+                    padding-top: 45px;
                     width: auto;
-                    height: 200px;
+                    height: 150px;
                     align-items: center;
                     justify-content: center;
                     width: 150px;
+                    p{
+                        padding-bottom: 40px;
+                        
+                        margin: 0px;
+                    }
                         .iconosRedes{
                             display: flex;
                             flex-direction: row;
@@ -78,6 +93,7 @@
                             align-self: center;
                             justify-self: center;
                             justify-content: space-evenly;
+                            padding-bottom: 65px;
                         }
                 }
             }
@@ -101,9 +117,12 @@
             padding: 20px;
             font-weight: 600;
             font-style: normal;
+            
+
+            
             .formulario1{
                 display: flex;
-                column-gap: 20px;
+                column-gap: 10px;
                     .contactoInput{
                         width: 100%;
                         padding: 12px 10px 12px 10px;
@@ -161,9 +180,7 @@
             }
         }
 }
-
 @media screen and (max-width: 765px) {
-
     #mainContacto {
         display: grid;
         grid-template-columns: 1fr ;
@@ -185,8 +202,5 @@
         font-weight: 300;
     }
 }
-
-
-
 
 /* -------------------------------FIN DE ESTILOS PARA CONTACTOS */

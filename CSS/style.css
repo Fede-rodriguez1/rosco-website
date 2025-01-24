@@ -530,17 +530,22 @@ a {
   grid-area: contacto;
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 #mainContacto .contacto .contactoComunicacion {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
 }
 #mainContacto .contacto .contactoComunicacion .contactoTelefono {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
   width: auto;
-  height: 200px;
+  height: 150px;
   align-items: center;
   justify-content: center;
   width: 150px;
@@ -550,7 +555,7 @@ a {
   flex-direction: column;
   row-gap: 25px;
   width: auto;
-  height: 200px;
+  height: 150px;
   align-items: center;
   justify-content: center;
   width: 150px;
@@ -558,22 +563,30 @@ a {
 #mainContacto .contacto .contactoComunicacion .contactoEmail {
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 30px;
   width: auto;
-  height: 200px;
+  height: 150px;
   align-items: center;
   justify-content: center;
   width: 150px;
 }
+#mainContacto .contacto .contactoComunicacion .contactoEmail p {
+  padding-bottom: 10px;
+}
 #mainContacto .contacto .contactoComunicacion .contactoRedes {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 30px;
+  padding-top: 45px;
   width: auto;
-  height: 200px;
+  height: 150px;
   align-items: center;
   justify-content: center;
   width: 150px;
+}
+#mainContacto .contacto .contactoComunicacion .contactoRedes p {
+  padding-bottom: 40px;
+  margin: 0px;
 }
 #mainContacto .contacto .contactoComunicacion .contactoRedes .iconosRedes {
   display: flex;
@@ -583,6 +596,7 @@ a {
   align-self: center;
   justify-self: center;
   justify-content: space-evenly;
+  padding-bottom: 65px;
 }
 #mainContacto .contacto .contactoMapa {
   display: flex;
@@ -606,7 +620,7 @@ a {
 }
 #mainContacto .mainFormulario .formulario1 {
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 #mainContacto .mainFormulario .formulario1 .contactoInput {
   width: 100%;
