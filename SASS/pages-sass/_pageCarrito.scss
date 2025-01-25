@@ -4,7 +4,7 @@
     background-color: rgb(247, 247, 247);
     max-width: 1700px;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 100px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400 ;
     display:flex ;
@@ -20,6 +20,7 @@
             h2{
                 color: #085C5A;
                 font-size: 30px;
+                animation: fadeInUp 1.5s ease-in-out;
             }
             button{
                 font-size: 15px;
