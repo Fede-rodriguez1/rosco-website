@@ -512,6 +512,7 @@ a {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    justify-self: center;
   }
   #mainAboutus .mainAboutusTitulo {
     grid-area: titulo;
@@ -519,6 +520,7 @@ a {
     justify-self: center;
     color: #085C5A;
     font-size: 25px;
+    justify-self: center;
   }
   #mainAboutus .mainAboutusFoto1 {
     grid-area: foto;
@@ -555,16 +557,7 @@ a {
     font-weight: 300;
   }
   #mainAboutus .mainAboutusCarrusel {
-    grid-area: fotos;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-self: center;
-    align-items: center;
-  }
-  #mainAboutus .mainAboutusCarrusel img {
-    border-radius: 10px;
+    display: none;
   }
 }
 /* ------------------FIN DE ESTILOS PARA ABOUTUS */
